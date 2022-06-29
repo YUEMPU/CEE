@@ -1,4 +1,5 @@
-﻿#include <stdio.h>
+﻿#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
 
 //作用域和生命周期
 //局部变量的作用域：就算变量的局部范围
@@ -113,15 +114,60 @@
 //
 //	return 0;
 //}
+//
+//int main()
+//{
+//	//printf("(are you ok??)");//  ??)会转变成 -- ] 三字母词
+//	//(are you ok] 
+//	//printf("% c\n" ,'\'');//要显示中间的'\'' ' 需要加\
+//	printf("\a\a\a");
+//
+//
+//	return 0;
+//	 
+//}
+int Add(int x, int y)
+{
+	int z = 0;
+	z = x + y;
+	return z;
+}
+//
+//int main()
+//{
+//	int s1 = 0;
+//	int s2 = 0;
+//	printf("请输入数值：例如1 1（中间空格）\n");
+//	scanf("%d%d", &s1, &s2);
+//	int sum = Add(s1, s2);
+//	printf("%d\n", sum);
+//	return 0;
+//}
+
+//int main()
+//{
+	//蠢方法 
+	//int a = 1;
+	//int b = 2;
+	//int c = 3;
+	//.....
+
+	//数值 - 一组相同类型元素的集合
+	//int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	//char ch[5] = { 'a','b','c' };//不完全初始化剩下的默认0
+	//int i = 0;
+	//while (i < 10)
+	//{
+	//	printf("%d ", arr[i]);
+	//	i++;
+	//}
+	//return 0;
+ //}
 
 int main()
 {
-	//printf("(are you ok??)");//  ??)会转变成 -- ] 三字母词
-	//(are you ok] 
-	//printf("% c\n" ,'\'');//要显示中间的'\'' ' 需要加\
-	printf("\a\a\a");
-
-
-	return 0;
-	 
+	//int a = 9 / 2;//两个整数相除出来的不带小数点 四舍五入
+	//float a = 9 / 2.0;//任意一个小数相除出来带小数点
+	int a = 9 % 2;//% - 取模（得到余数）
+	printf("%d\n", a);
 }
