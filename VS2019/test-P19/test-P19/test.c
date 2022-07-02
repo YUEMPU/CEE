@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+#define _CRT_SECURE_NO_WARNINGS 
 
 #include <stdio.h>
 //int main()
@@ -57,3 +57,22 @@
 //					//下标引用操作符
 //	return 0;
 //}
+int main()
+{
+	int a = 0;
+	printf("碧婷我爱你，你爱我吗？\n");
+	printf("爱请输入：1 不爱请离开\n");
+	scanf("%d", & a);
+	if (a == 1);
+	{
+		printf(" \n\n 我也爱你\n");
+		printf("***    ***\n");
+		printf("****  *** \n");
+		printf(" *******  \n");
+		printf("  *****   \n");
+		printf("   ***    \n");
+		printf("    *     \n");
+	}
+	return 0;
+
+}
