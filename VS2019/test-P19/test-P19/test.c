@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 
+#define _CRT_SECURE_NO_WARNINGS 1
 
 #include <stdio.h>
 //int main()
@@ -56,23 +56,64 @@
 //	printf("%d\n", arr[0]);
 //					//ÏÂ±êÒýÓÃ²Ù×÷·û
 //	return 0;
+////}
+//int main()
+//{
+//	int a = 0;
+//	printf("±ÌæÃÎÒ°®Äã£¬Äã°®ÎÒÂð£¿\n");
+//	printf("°®ÇëÊäÈë£º1 ²»°®ÇëÀë¿ª\n");
+//	scanf("%d", & a);
+//	if (a == 1);
+//	{
+//		printf(" \n\n ÎÒÒ²°®Äã\n");
+//		printf("***    ***\n");
+//		printf("****  *** \n");
+//		printf(" *******  \n");
+//		printf("  *****   \n");
+//		printf("   ***    \n");
+//		printf("    *     \n");
+//	}
+//	return 0;
+//
 //}
+//#define ADD(X,Y) ((X)+(Y))
+//
+//int main()
+//{
+//	printf("%d\n", 5*4*ADD(2, 3));
+//
+//	return 0;
+//}
+//
+//int main()
+//{
+//	printf("%d\n", sizeof(int*));
+
+struct Stu
+{
+	char name[20];
+	int age;
+	double score;
+};
+
+struct Book
+{
+	char name[20];
+	float price;
+	char id[30];
+};
+
 int main()
 {
-	int a = 0;
-	printf("±ÌæÃÎÒ°®Äã£¬Äã°®ÎÒÂð£¿\n");
-	printf("°®ÇëÊäÈë£º1 ²»°®ÇëÀë¿ª\n");
-	scanf("%d", & a);
-	if (a == 1);
-	{
-		printf(" \n\n ÎÒÒ²°®Äã\n");
-		printf("***    ***\n");
-		printf("****  *** \n");
-		printf(" *******  \n");
-		printf("  *****   \n");
-		printf("   ***    \n");
-		printf("    *     \n");
-	}
+	struct Stu s = { "ÕÅÈý",20,85.5 };
+	printf("1: %s %d %lf\n", s.name, s.age, s.score);
+
+	struct Stu * ps = &s;
+	printf("2: %s %d %lf\n", (*ps).name,(*ps).age,(*ps).score);
+
+	printf("3: %s %d %lf\n", ps->name, ps->age, ps->score);
+
+
 	return 0;
 
 }
